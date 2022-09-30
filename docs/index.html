@@ -522,7 +522,7 @@
 
 
 
-<div class="swiper-length" style="display: none;">0</div>
+<div class="swiper-length" style="display: none;">1</div>
 <div id="appSwiper"
   class="swiper-no-swiping"
   @mouseenter="stopAutoPlay()" 
@@ -530,35 +530,47 @@
 >
   <swiper v-cloak ref="mySwiper" :options="swiperOptions" @slideChangeTransitionEnd="slideChangeTransitionEnd">
     
-      <swiper-slide>
-        <div class="item swiper-lazy" data-background="https://wallpaperaccess.com/full/2049479.jpg" style="background-size: 300000px; 
-          background-position: left center;" style="position: relative;">
-          <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-            <div class="flag">
-              
-              <div class="img-mask swiper-lazy swiper-default-bgImg" data-background="https://wallpaperaccess.com/full/2049479.jpg" style="height: 100%; background-size: cover; 
-                background-position: center center;">
-                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>   
-              </div>
-              <div class="flag-text">
-                <div class="flag-text-content">
-                  <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.2s">You Only Live Once</div>
-                  
-                    <div class="ani animated default-excerpt" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.2s">
-                      <vue-typed-js :strings="defaultDesc" :loop="defaultDescTypedLoop" :type-speed="100" :back-speed="100">
-                        <h1 class="typing"></h1>
-                      </vue-typed-js>
-                    </div>
+      
+        <swiper-slide>
+          <div class="item swiper-lazy" data-background="https://wallpaperaccess.com/full/2049479.jpg" style="background-size: 300000px; 
+            background-position: left center;" style="position: relative;">
+            <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
+              <div class="flag">
+                
+                <div class="img-mask swiper-lazy swiper-default-bgImg" data-background="https://wallpaperaccess.com/full/2049479.jpg" style="height: 100%; background-size: cover; 
+                  background-position: center center;">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>   
+                </div>
+                <div class="flag-text">
+                  <div class="flag-text-content">
+                    <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.2s">You Only Live Once</div>
                     
-                </div>
-                <div style="display: flex;" class="flag-text-btns">
-                  
-                  
+                      <div  class="ani animated default-excerpt" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.2s">
+                        <vue-typed-js :strings="defaultDesc" :loop="defaultDescTypedLoop" :type-speed="100" :back-speed="100">
+                          <h1 class="typing"></h1>
+                        </vue-typed-js>
+                      </div>
+                      
+                  </div>
+                  <div style="display: flex;" class="flag-text-btns">
+                    
+                    
+                  </div>
                 </div>
               </div>
-            </div>
           </div>
-      </swiper-slide>
+        </swiper-slide>
+      
+      
+        
+        
+      
+        
+        
+      
+    <div class="swiper-pagination" slot="pagination" pointer style="display: none;"></div>
+    <div class="swiper-button-prev swiper-button-white" pointer slot="button-prev" style="display: none;"></div>
+    <div class="swiper-button-next swiper-button-white" pointer slot="button-next" style="display: none;"></div>
     
   </swiper>
   
@@ -1259,6 +1271,8 @@
 		
 			
 		
+			
+		
 	</div>
 </div>
 
@@ -1271,6 +1285,60 @@
   
     
     <article class="post reveal" style="flex-direction: row-reverse;   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <span class="post-time">2022-09-29</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/GrassBlog/2022/09/29/Java-OOP-class-1/">物件導向程式語言(Java) 09/29 第三週 作業</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/GrassBlog/tags/Java/" rel="tag">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/GrassBlog/tags/%E4%BD%9C%E6%A5%AD/" rel="tag">作業</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+<div class="article-category">
+  <i class="iconfont iconbookmark1"></i>
+  <a class="article-category-link" href="/GrassBlog/categories/Java-%E7%89%A9%E4%BB%B6%E5%B0%8E%E5%90%91%E8%AA%B2%E7%A8%8B%E4%BD%9C%E6%A5%AD/">Java 物件導向課程作業</a>
+</div>
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            <a href="/GrassBlog/2022/09/29/Java-OOP-class-1/" style="background-size: cover; 
+              background-position: center center;">
+              <img class="lazyload lazyload placeholder" src="/GrassBlog/medias/Java.jpeg" class="lazyload placeholder" data-srcset="/GrassBlog/medias/Java.jpeg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+            </a>
+          </div>
+          <div class="post-content">
+            <p>此篇文章為關於我「物件導向程式語言」的上課內容紀錄，主要使用語言為 <code>Java</code>，這也是我第一次接觸 <code>Java</code>，因此文章不會有太深入的內容。</p>
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/GrassBlog/2022/09/29/Java-OOP-class-1/">
+            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        <a href="/GrassBlog/2022/09/29/Java-OOP-class-1/" style="background-size: cover; 
+          background-position: center center;">
+          <img class="lazyload lazyload placeholder" src="/GrassBlog/medias/Java.jpeg" class="lazyload placeholder" data-srcset="/GrassBlog/medias/Java.jpeg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+        </a>
+      </div>
+    </article>
+  
+    
+    <article class="post reveal" style="   ">
       <div class="post-main">
         <div class="post-info">
           <div class="post-time">
@@ -1311,7 +1379,7 @@
         </div>
         <div class="post-more">
           <a href="/GrassBlog/2022/09/28/hello-world/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
+            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
@@ -1402,6 +1470,11 @@
         <ul class="entry navigation">
           
             <li><a class="flat-box"
+              title="/GrassBlog/categories/Java-%E7%89%A9%E4%BB%B6%E5%B0%8E%E5%90%91%E8%AA%B2%E7%A8%8B%E4%BD%9C%E6%A5%AD/" href="/GrassBlog/categories/Java-%E7%89%A9%E4%BB%B6%E5%B0%8E%E5%90%91%E8%AA%B2%E7%A8%8B%E4%BD%9C%E6%A5%AD/"
+              id="GrassBlogcategoriesJava-E789A9E4BBB6E5B08EE59091E8AAB2E7A88BE4BD9CE6A5AD"
+              ><div class='name'>Java 物件導向課程作業</div><div class='badge'>(1)</div></a></li>
+          
+            <li><a class="flat-box"
               title="/GrassBlog/categories/%E6%97%A5%E8%AA%8C%E7%B4%80%E9%8C%84/" href="/GrassBlog/categories/%E6%97%A5%E8%AA%8C%E7%B4%80%E9%8C%84/"
               id="GrassBlogcategoriesE697A5E8AA8CE7B480E98C84"
               ><div class='name'>日誌紀錄</div><div class='badge'>(1)</div></a></li>
@@ -1424,7 +1497,7 @@
 
 
     <div class='content'>
-    <a href="/GrassBlog/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a> <a href="/GrassBlog/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 14px; color: #999">前端</a> <a href="/GrassBlog/tags/%E6%97%A5%E8%AA%8C/" style="font-size: 14px; color: #999">日誌</a>
+    <a href="/GrassBlog/tags/Hexo/" style="font-size: 14px; color: #999">Hexo</a> <a href="/GrassBlog/tags/Java/" style="font-size: 14px; color: #999">Java</a> <a href="/GrassBlog/tags/%E4%BD%9C%E6%A5%AD/" style="font-size: 14px; color: #999">作業</a> <a href="/GrassBlog/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 14px; color: #999">前端</a> <a href="/GrassBlog/tags/%E6%97%A5%E8%AA%8C/" style="font-size: 14px; color: #999">日誌</a>
     </div>
 </section>
 
@@ -1445,6 +1518,27 @@
       <!-- hash算法 -->
       
       <div class="aside-list">
+        
+          <div class="aside-list-item">
+            
+            
+            
+
+            <div class="post-img-box">
+              <a href="/GrassBlog/2022/09/29/Java-OOP-class-1/" class="post-img " style="background-size: cover; 
+                background-position: center center;">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="/GrassBlog/medias/Java.jpeg" class="lazyload placeholder" data-srcset="/GrassBlog/medias/Java.jpeg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+              </a>
+            </div>
+            <div class="post-date-title">
+              <div>
+                
+                  <span class="post-date">09-29</span>
+                
+              </div>
+              <a class="post-title" href="/GrassBlog/2022/09/29/Java-OOP-class-1/">物件導向程式語言(Java) 09/29 第三週 作業</a>
+            </div>
+          </div>
         
           <div class="aside-list-item">
             
@@ -1474,7 +1568,7 @@
     
   <section class="widget side_archives">
     
-    <header><a style="color: red" href='/GrassBlog/archives/'><i class="fas fa-archive fa-fw" aria-hidden="true"></i><span class='name'>歸檔</span></a></header><div class="content"><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/GrassBlog/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><span class="card-archive-list-count">1</span></a></li></ul></div>
+    <header><a style="color: red" href='/GrassBlog/archives/'><i class="fas fa-archive fa-fw" aria-hidden="true"></i><span class='name'>歸檔</span></a></header><div class="content"><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/GrassBlog/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><span class="card-archive-list-count">2</span></a></li></ul></div>
   </section>
 
     <section class="widget side_webinfo">
@@ -1491,7 +1585,7 @@
       
         <div class="webinfo-item">
           <div>文章數目：</div>
-          <div>1 篇</div>
+          <div>2 篇</div>
         </div>
       
 
