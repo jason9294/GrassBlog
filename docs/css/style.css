@@ -4488,6 +4488,12 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   border: 1px solid #222;
   background: #222;
 }
+.darkModel .post-detail details li {
+  color: #f0f6fc;
+}
+.darkModel .post-detail details ol {
+  color: #f0f6fc;
+}
 .darkModel .post-detail .timenode .body {
   background-color: rgba(240,246,252,0.149);
 }
